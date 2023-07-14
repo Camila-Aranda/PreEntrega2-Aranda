@@ -109,7 +109,7 @@ html {
 /*      --------------   REUTILIZABLES ----------------- */
 
 .titulos {
-    font-size: 10vh;
+    font-size: 900%;
     font-family: titulo;
     display: flex;
     justify-content: center;
@@ -195,7 +195,7 @@ html {
 }
 
 /*      --------------   FORMULARIO  ----------------- */
-form {
+.form {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -203,7 +203,7 @@ form {
     border: 1px solid #000000;
 }
 
-input {
+.input {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -211,7 +211,7 @@ input {
     outline: none;
 }
 
-textarea {
+.textarea {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -219,7 +219,7 @@ textarea {
     outline: none;
 }
 
-button {
+.button {
     margin: 10px 0;
     padding: 10px;
     background-color: #000;
@@ -273,26 +273,92 @@ button {
 }
 
 /*      --------------   RESPONSIVE ----------------- */
-@media (min-width: 320px){
+@media (min-width: 0px) and (max-width: 600px) {
+    .nav__contenedor {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1vh;
+    }
+
+    .nav__hijo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .nav__items--link {
+        font-size: 2.4vh;
+        padding: 0vh 0vh 1vh 0vh;
+    }
+
+    .logo {
+        width: 25vh;
+        padding: 1vh;
+    }
+
+    /*      --------------   CONTENIDO ----------------- */
+
+    .titulos{
+        font-size: 12vh;
+    }
+    .article {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    
+    .article__caja {
+        align-items: center;
+        flex-direction: column;
+    }
+    .article__caja--img{
+        width: 35vh;
+        height: 35vh;
+        margin: 3vh 0vh;
+    }
+    .sectionTour {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin: 10vh 0vh;
+    }
+    
+    
+    .sectionTour__fechas--link {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        color: #050000;
+        font-size: 2.5vh;
+        font-family: fuente;
+    }
+    
+    /*      --------------   footer ----------------- */
+    .footer__contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .footer__social {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2vh;
+    }
+    .footer__social--link {
+        font-size: 2vh;
+    }
+    .footer__copyright {
+        font-size: 2.2vh;
+    }
+    .logos {
+        width: 5.5vh;
+    }
+
+}
+@media (min-width: 600px) {
     
 }
 
-@media (min-width: 480px){
-    
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 600px){
-    
-}
+@media (min-width: 1024px) {}
 
-@media (min-width: 768px){
-    
-}
-
-@media (min-width: 1024px){
-    
-}
-
-@media (min-width: 1200px){
-    
-}
+@media (min-width: 1200px) {}
