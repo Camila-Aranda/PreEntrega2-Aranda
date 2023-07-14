@@ -1,0 +1,298 @@
+/*      --------------   RESET  ----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-image: url(./../images/theweeknd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: fuente;
+    src: url(./../fonts/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXo.woff2);
+}
+
+@font-face {
+    font-family: fuente-texto;
+    src: url(./../fonts/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2);
+}
+
+@font-face {
+    font-family: titulo;
+    src: url(./../fonts/DrukCond-Super-Trial.otf);
+}
+
+/*      --------------   NAVEGADOR  ----------------- */
+/*      --------------   Hice un Grid en el contenedor padre de dos columnas, en uno puse el logo y en el otro un grid de 4 columnas para el navegador   ----------------- */
+.nav__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8vh;
+    background-color: #1c3b69;
+}
+
+.nav__hijo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #1c3b69;
+}
+
+.nav__items {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.nav__items--link {
+    font-family: fuente;
+    font-size: 1.8vh;
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 15vh;
+    padding: 1vh;
+}
+
+/*      --------------   CONTENIDOS  ----------------- */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 14vh;
+    margin: 6%;
+}
+
+.main__titulo {
+    display: flex;
+    flex-direction: column;
+    font-family: titulo;
+    font-size: 15vh;
+}
+
+.main__anuncio {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 90%;
+}
+
+.main__titulo--letra {
+    display: flex;
+    justify-content: start;
+}
+
+
+/*      --------------   REUTILIZABLES ----------------- */
+
+.titulos {
+    font-size: 10vh;
+    font-family: titulo;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.subtitulos {
+    font-size: 5vh;
+    font-family: titulo;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5vh 0vh 1.5vh 0vh;
+}
+
+.parrafos {
+    display: flex;
+    align-self: center;
+    font-family: fuente;
+    font-size: 2vh;
+    margin: 2vh 6vh 3vh 6vh;
+    padding: 1vh;
+    color: #050000;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.containerDisco__iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.iframe {
+    width: 60%;
+    height: 65vh;
+    padding: 2vh 0vh 2vh 0vh;
+}
+
+.article {
+    margin: 3vh 0vh 4vh 0vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.article__caja {
+    display: flex;
+    justify-content: center;
+
+}
+
+.article__caja--img {
+    width: 40vh;
+    height: 40vh;
+    margin: 1vh;
+    border-radius: 3vh;
+}
+
+.sectionTour {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0vh 15vh 0vh 15vh;
+}
+
+.sectionTour__fechas {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.sectionTour__fechas--link {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: #050000;
+    font-size: 2.5vh;
+    font-family: fuente;
+}
+
+/*      --------------   FORMULARIO  ----------------- */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*      --------------   FOOTER  ----------------- */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c3b69;
+    color: #ffffff;
+    font-family: fuente-texto;
+}
+
+.footer__contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.footer__social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.footer__social--link {
+    color: #ffffff;
+    font-size: 1.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.7vh;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.7vh;
+}
+
+.logos {
+    width: 3.5vh;
+}
+
+/*      --------------   RESPONSIVE ----------------- */
+@media (min-width: 320px){
+    
+}
+
+@media (min-width: 480px){
+    
+}
+
+@media (min-width: 600px){
+    
+}
+
+@media (min-width: 768px){
+    
+}
+
+@media (min-width: 1024px){
+    
+}
+
+@media (min-width: 1200px){
+    
+}
